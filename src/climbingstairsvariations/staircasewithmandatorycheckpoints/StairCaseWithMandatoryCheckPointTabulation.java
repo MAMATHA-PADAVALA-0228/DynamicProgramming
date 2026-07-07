@@ -5,9 +5,6 @@ import java.util.*;
 class Solution2 {
 
 
-
-
-
     public int climbWithCheckpoint(int n, int[] checkpoints) {
         Set<Integer> cpSet = new HashSet<>();
         for (int c : checkpoints) cpSet.add(c);
