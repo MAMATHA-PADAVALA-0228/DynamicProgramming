@@ -166,6 +166,24 @@ public class SubsetSumWithAtMostKEvenMemoization {
                 false,
                 "Target not achievable"
         );
+
+        check(
+                sol.subsetSumAtMostKEven(new int[]{2,4}, 0, 0),
+                true,
+                "Empty subset"
+        );
+
+        check(
+                sol.subsetSumAtMostKEven(new int[]{2,4}, 6, 10),
+                true,
+                "k > total evens"
+        );
+
+        check(
+                sol.subsetSumAtMostKEven(new int[]{1,3,5}, 8, 2),
+                true,
+                "{3,5}"
+        );
     }
 }
 
